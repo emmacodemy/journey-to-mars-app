@@ -1,5 +1,7 @@
 package com.longbridge.learning.ajourneytomars.ui;
 
+import android.content.Intent;
+import android.content.res.Resources;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -22,11 +24,16 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String name = nameEditText.getText().toString();
-                loadPage(name);
+                startStory(name);
             }
         });
     }
 
-    private void loadPage(String name) {
+    private void startStory(String name) {
+        Intent intent = new Intent(this,Journey2Activity.class);
+        Resources resources = getResources();
+        String key = resources.getString(R.string.key_name);
+        intent.putExtra(key,name);
+        startActivity(intent);
     }
 }
