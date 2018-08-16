@@ -1,10 +1,12 @@
-package com.longbridge.learning.ajourneytomars;
+package com.longbridge.learning.ajourneytomars.ui;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+
+import com.longbridge.learning.ajourneytomars.R;
 
 public class MainActivity extends AppCompatActivity {
     private EditText nameEditText;
