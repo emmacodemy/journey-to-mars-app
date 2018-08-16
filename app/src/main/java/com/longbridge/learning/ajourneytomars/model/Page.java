@@ -1,9 +1,5 @@
 package com.longbridge.learning.ajourneytomars.model;
 
-/**
- * Created by EMMA PC on 16/08/2018.
- */
-
 public class Page {
     private int imageId;
     private int textId;
@@ -22,6 +18,9 @@ public class Page {
         this.imageId = imageId;
         this.textId = textId;
         this.isFinal = true;
+    }
+
+    public Page() {
     }
 
     public int getImageId() {

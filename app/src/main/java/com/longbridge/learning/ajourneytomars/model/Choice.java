@@ -4,21 +4,25 @@ package com.longbridge.learning.ajourneytomars.model;
  * Created by EMMA PC on 16/08/2018.
  */
 
-class Choice {
-    private int choiceId;
+public class Choice {
+    private int textId;
     private int nextPage;
 
-    public Choice(int choiceId, int nextPage) {
-        this.choiceId = choiceId;
+    public Choice() {
+    }
+
+    public Choice(int textId, int nextPage) {
+        this.textId = textId;
         this.nextPage = nextPage;
     }
 
-    public int getChoiceId() {
-        return choiceId;
+
+    public int getTextId() {
+        return textId;
     }
 
-    public void setChoiceId(int choiceId) {
-        this.choiceId = choiceId;
+    public void setTextId(int textId) {
+        this.textId = textId;
     }
 
     public int getNextPage() {
