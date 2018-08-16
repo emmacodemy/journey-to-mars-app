@@ -6,4 +6,5 @@
     android:layout_height="match_parent"
     tools:context="com.longbridge.learning.ajourneytomars.Journey2Activity">
 
+
 </android.support.constraint.ConstraintLayout>
