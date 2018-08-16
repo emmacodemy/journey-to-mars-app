@@ -15,12 +15,13 @@ import com.longbridge.learning.ajourneytomars.model.Story;
 import java.util.Stack;
 
 public class Journey2Activity extends AppCompatActivity {
+    private Story story;
     private ImageView pageImageView;
     private TextView pageTextView;
     private Button choice1Button;
     private Button choice2Button;
     private String name;
-    private Stack<Integer> pageStack;
+    private Stack<Integer> pageStack = new Stack<>();
 
 
     @Override
@@ -36,6 +37,7 @@ public class Journey2Activity extends AppCompatActivity {
         if (name == null || name.isEmpty()){
             name = "friend";
         }
+        story = new Story();
         loadpage(0);
 
 
@@ -43,7 +45,6 @@ public class Journey2Activity extends AppCompatActivity {
 
     private void loadpage(int pageNo) {
         pageStack.push(pageNo);
-        Story story = new Story();
         final Page page = story.getPage(pageNo);
         pageImageView.setImageResource(page.getImageId());
         pageTextView.setText(String.format(getString(page.getTextId(),name)));

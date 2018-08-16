@@ -31,8 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void startStory(String name) {
         Intent intent = new Intent(this,Journey2Activity.class);
-        Resources resources = getResources();
-        String key = resources.getString(R.string.key_name);
+        String key = getString(R.string.key_name);
         intent.putExtra(key,name);
         startActivity(intent);
     }

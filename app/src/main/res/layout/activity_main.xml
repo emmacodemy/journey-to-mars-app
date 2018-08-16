@@ -34,9 +34,9 @@
         android:id="@+id/titleButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="@String/start_your_adventure"
         android:textColor="#3C8CEC"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="@String/start_your_adventure" />
 </android.support.constraint.ConstraintLayout>

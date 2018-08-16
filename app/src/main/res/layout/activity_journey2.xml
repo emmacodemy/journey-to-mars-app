@@ -53,9 +53,6 @@
                 android:adjustViewBounds="true"
                 android:contentDescription="@string/story_image_content_description"
                 android:scaleType="fitXY"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
                 tools:src="@drawable/page0" />
 
             <TextView
@@ -66,12 +63,7 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:height="8dp"
-                android:padding="5dp"
                 android:textSize="16sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/pageImageView"
                 tools:text="@string/page0" />
         </LinearLayout>
     </ScrollView>
