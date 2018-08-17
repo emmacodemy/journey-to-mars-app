@@ -23,7 +23,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Enter Your Name"
+            android:hint="@string/enter_your_name"
             android:inputType="textPersonName"
             android:textSize="16sp"
             app:layout_constraintBottom_toTopOf="@+id/titleButton"
@@ -38,5 +38,5 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:text="@String/start_your_adventure" />
+        tools:text="@string/start_your_adventure" />
 </android.support.constraint.ConstraintLayout>
